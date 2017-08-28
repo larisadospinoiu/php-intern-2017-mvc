@@ -15,7 +15,7 @@ class Controller_Products extends Controller
 
     function action_add_product()
     {
-        die('Here will be the logic for adding an product');
+        //die('Here will be the logic for adding an product');
 
         //load our model
 

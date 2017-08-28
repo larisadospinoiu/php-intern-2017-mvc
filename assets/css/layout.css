@@ -39,15 +39,15 @@ q:after{content:' „'; font-size:26px; line-height:0;}
 
 div.wrapper{display:block; width:960px; margin:0 auto; padding:0; text-align:left;}
 
-.row1, .row1 a{color:#979797; background-color:#FFFFFF;}
-.row2{color:#979797; background-color:#FFFFFF;}
+.row1, .row1 a{color:#979797; }
+.row2{color:#979797;  }
 .row2 a{color:#FF9900; background-color:#FFFFFF;}
 .row3{border-top:1px solid #DEDEDE;}
 .row3, .row3 a{color:#979797; background-color:#FFFFFF;}
 
 /*----------------------------------------------Generalise-------------------------------------*/
 
-#header, #container, #footer{display:block; width:960px;}
+#header, #container, #footer{display:block; width:max-width;}
 
 nav ul{margin:0; padding:0; list-style:none;}
 
@@ -69,7 +69,7 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 
 #header{}
 
-#header #hgroup{padding:20px 0 0 0; float:left;}
+#header #hgroup{padding:0 0 0 0; float:left; margin:0 ;}
 #header #hgroup h1, #header #hgroup h2{font-weight:normal; text-transform:none;}
 #header #hgroup h1{font-size:36px;}
 #header #hgroup h2{font-size:13px;}
@@ -81,10 +81,11 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 #header nav li a{}
 #header nav li a:hover{color:#FF9900; }
 
+
 /*----------------------------------------------Content Area-------------------------------------*/
 
 #container{padding:30px 0;}
-#container section{display:block; width:100%; margin:0 0 30px 0; padding:0;}
+#container section{display:block; width:100%; margin:0; padding:0;}
 #container .last{margin:0;}
 #container .more{text-align:right; text-transform:uppercase; font-size:smaller; font-weight:bold;}
 
@@ -98,8 +99,8 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 
 #container #homepage{line-height:1.6em;}
 #container #homepage article{}
-#container #homepage article h2{font-size:14px; margin-bottom:15px; padding-bottom:8px; border-bottom:1px solid #DEDEDE;}
-#container #homepage article p{margin:0; padding:0;}
+#container #homepage article h2{font-size:14px; margin-bottom:15px; padding-bottom:8px; border-bottom:1px solid #DEDEDE;color:black;}
+#container #homepage article p{margin:0; padding:0; text-align:justify; color:black;}
 #container #homepage article img{float:left; width:80px; height:80px; margin:0 10px 10px 0; padding:4px; border:1px solid #DEDEDE;}
 #container #homepage article footer{margin:10px 0 0 0;}
 
@@ -107,15 +108,28 @@ blockquote:after, q:after{content:' „'; font-size:26px; line-height:0;}
 
 .container{
 	width: 100%;
-	margin: 0 auto;
+	margin: 0 0;
 }
 
 
 /* ------our new css-----*/
+.err404 {
+    color: #979797;
+    text-align: center !important;
+    margin: 150px auto 100px auto !important;
+}
+
+
+.header1{background-color:#eceaea;}
+.cut{background-color:#eceaea;}
+.ptpad{padding:0 !important;}
+.ceva {text-align: center !important;}
 ul.tabs{
 	margin: 0px;
 	padding: 0px;
 	list-style: none;
+	align-content: center;
+	width:950px;
 }
 ul.tabs li{
 	background: #ededed;
@@ -137,6 +151,9 @@ ul.tabs li.current{
 	display: none;
 	background: #ededed;
 	padding: 15px;
+	align-content: center;
+	width:950px;
+	
 }
 
 .tab-content.current{
@@ -152,27 +169,44 @@ ul.tabs li.current{
     padding-bottom: 10px;
 }
 
-.product{
-	height:150px;
-	width:175px;
-	border:1px solid;
-	margin-right:10px;
-	float:left;
-	margin-top:10px;
-	text-align:center;
+
+
+.product {
+height: 100%;
+width: 100%;
+border: 1px solid;
+margin-right: 10px;
+float: left;
+margin-top: 10px;
+color: black;
+background-color: antiquewhite;
+
 }
+#tab-2{background-color: ;}
+.product img {
+    border-radius: 50%;
+    margin-top: 10px;
+    padding: 2px;
+    border: 1px solid;
+    width: 400px;
+    margin-bottom: 10px;
+    align-content: left !important;
+    float: left;
+}
+
+.ddd {
+	margin-left: 10px;
+text-align: justify;
+}
+
+
+
+
 
 .product.last{
 	margin-right:0px;
 }
-.product img {
-	border-radius: 50%;
-    margin-top: 10px;
-    padding: 2px;
-    border: 1px solid;
-    width: 100px;
-    margin-bottom: 10px;
-}
+
 
 /* ------Form-----*/
 *, *:before, *:after {
@@ -187,7 +221,7 @@ body {
 }
 
 form {
-  max-width: 300px;
+  max-width: 1000px;
   margin: 10px auto;
   padding: 10px 20px;
   background: #f4f7f8;
@@ -239,13 +273,13 @@ select {
 button {
   padding: 19px 39px 18px 39px;
   color: #FFF;
-  background-color: #FF9900;
+  background-color: #000CFF;
   font-size: 18px;
   text-align: center;
   font-style: normal;
   border-radius: 5px;
   width: 100%;
-  border: 1px solid #FF9900;
+  border: 1px solid #000CFF;
   border-width: 1px 1px 3px;
   box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
   margin-bottom: 10px;
@@ -289,10 +323,12 @@ label.light {
 @media screen and (min-width: 480px) {
 
   form {
-    max-width: 480px;
+    max-width: 950px;
+	background-color: #5fcf80;
   }
-
+  
 }
+
 
 
 #footer{padding:20px 0;}

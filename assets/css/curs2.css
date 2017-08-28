@@ -7,13 +7,15 @@
 		font-size:24px;
 	}
 	form{
-		background-color:#000;
+		background-color: antiquewhite;
+		max-width: 950px;
+		color: black;
 	}
 	form fieldset{
 		margin-bottom: 0;
 	}
 	form h1, form legend, form label{
-		color:#fff;
+		color:black;
 	}
 }
 

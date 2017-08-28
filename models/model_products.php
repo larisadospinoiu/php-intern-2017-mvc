@@ -3,7 +3,7 @@ class Model_Products extends Model
 {
     function get_products($limit=30, $offset=0)
     {
-        $sth = $this->db->prepare("SELECT id,name, price,details, image from products ");
+        $sth = $this->db->prepare("SELECT id,name, details, price, job, imagine from products ");
 
         //$sth->bindValue(':limit', $limit);
         //$sth->bindValue(':offset', $offset);

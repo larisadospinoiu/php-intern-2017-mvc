@@ -1,1 +1,3 @@
-<h1>Error 404</h1>
+<div class="err404">
+<img src="assets/images/404.jpg" alt="">
+</div>

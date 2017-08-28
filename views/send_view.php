@@ -1,0 +1,1 @@
+<div class="err404"><p id="sent_message">Your message was sent!!!</p></div>
